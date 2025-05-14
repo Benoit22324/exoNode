@@ -23,10 +23,10 @@ const server = http.createServer((req, res) => {
 
     if (url === "shuffle") {
         currentList = shuffle(currentList);
-        res.writeHead(200, {
-            "content-type": "text/plain"
+        res.writeHead(301, {
+            "location": "/"
         });
-        res.end("User list Suffled");
+        res.end();
         return
     }
 
