@@ -43,7 +43,7 @@ const server = http.createServer((req, res) => {
                 <h1>User List:</h1>
                 <ul>
                     ${
-                        currentList.map((name) => `<li>${name}</li>`)
+                        currentList.map((name) => `<li>${name}</li>`).join("")
                     }
                 </ul>
             </body>
