@@ -1,0 +1,8 @@
+div.user-card
+    h4 #{name.first} #{name.last.toUpperCase()} <small>(#{age})</small>
+    p Né le #{birthdate.getDate()}/0#{birthdate.getMonth() + 1}/#{birthdate.getFullYear()}
+    p Vit à <strong>#{location.city}, #{location.zipcode}</strong>
+    if isAdmin
+        span.badge-admin Est administrateur
+    else
+        span N'est pas administrateur
