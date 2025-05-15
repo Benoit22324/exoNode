@@ -1,0 +1,15 @@
+extends layout.pug 
+
+block title 
+    title Contact Page
+
+block content
+    div.container
+        form(method="post")
+            label Email:
+            input(type="email" name="email" required)
+
+            label Message:
+            textarea(name="message") 
+
+            input(type="submit")

@@ -10,6 +10,10 @@ block content
         p Contactez-moi à l'adresse email suivante :
         output#generate-email
 
+    if newRequest
+        div#toast
+            p(style="color:red") Nouvelle requête ajouté !
+
 block script 
     script.
         (function preventSpam() {
