@@ -1,0 +1,8 @@
+mixin navlink(path, name)
+    li: a(href=path)= name
+
+footer 
+    ul 
+        +navlink("#", "Mentions légales")
+        +navlink("#", "CGU")
+        +navlink("#", "Réclamations")
